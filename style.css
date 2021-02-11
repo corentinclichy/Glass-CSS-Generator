@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(230, 230, 230);
+  font-family: "Lato", sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(24, 88, 207);
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: rgb(35, 112, 255);
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+
+  padding: 5rem;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header h1 {
+  font-weight: 900;
+}
+
+header h5 {
+  line-height: 2rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.settings {
+  margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blur-settings,
+.transparency-settings {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.checkbox-settings {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.checkbox-settings p {
+  margin-left: 0.3rem;
+}
+
+.color-picker,
+.checkbox-settings input[type="checkbox"] {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: rgb(42, 42, 42) solid 1px;
+  border-radius: 0.2rem;
+  outline: none;
+}
+.checkbox-settings input[type="checkbox"] {
+  margin-left: 1rem;
+}
+
+.blur-infos,
+.trans-infos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.generate-css {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.generate-css textarea,
+.generate-css button {
+  margin-top: 1rem;
+}
+
+.generate-css button {
+  align-self: center;
+  justify-self: center;
+  border: none;
+  width: 200px;
+  height: 40px;
+  border-radius: 0.3rem;
+  background: rgb(101, 92, 236);
+  padding: 2rem 0.5rem;
+  color: white;
+  transition: all 0.3s cubic-bezier(0.67, 0.17, 0.4, 0.83);
+  outline: none;
+  cursor: pointer;
+}
+
+.generate-css textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  background: rgb(37, 37, 37);
+  color: white;
+}
+
+.isOutlined {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.button__circle {
+  width: 60px !important;
+  height: 60px !important;
+  background: mediumseagreen !important;
+  border-radius: 50% !important;
+  transform: rotate(-180deg);
+}
+
+.copy-css,
+.tick {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-css svg {
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
+
+.tick {
+  color: white;
+  transition: all 0.9s;
+}
+
+.wallpaper-infos {
+  padding: 1rem 1rem;
+  border: none;
+  background: rgba(122, 122, 122, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  font-family: "Lato", sans-serif;
+  color: rgb(27, 27, 27);
+  font-size: 1rem;
+  font-weight: 300;
+  position: absolute;
+  bottom: 1rem;
+  transition: all 0.5s ease;
+  right: 1rem;
+  outline: none;
+  color: lightgray;
+  max-width: 17rem;
+}
+
+.wallpaper-infos a {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.change-bck-btn {
+  display: block;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
